@@ -11,5 +11,5 @@ def fetch_space():
     r.raise_for_status()
     return r.json()
 
-res = fetch_space("Harvest Moon with Erupting Mount Etna")
-st.write(res["title"])
+res = fetch_space()
+st.write(res[0])
