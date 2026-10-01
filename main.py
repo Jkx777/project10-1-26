@@ -12,4 +12,8 @@ def fetch_space():
 res = fetch_space()
 st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
+
+st.html(
+    "<p><span style='text-decoration: line-through double red;'>Oops</span>!</p>"
+)
 st.write(res[0]["explanation"])
