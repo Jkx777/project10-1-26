@@ -14,4 +14,3 @@ st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
 
 st.html(res[0]["explanation"])
-st.write()
