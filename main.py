@@ -11,4 +11,4 @@ def fetch_space():
 
 res = fetch_space()
 st.title(res[0]["title"])
-st.image(res[0]["hurl"])
+st.image(res[0]["hdurl"])
