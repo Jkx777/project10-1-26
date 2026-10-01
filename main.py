@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
 
-st.title("Space")
-
 base_url = "https://science.nasa.gov/wp-json/wp/v2/apod-basic/?api_key=DEMO_KEY"
 
 def fetch_space():
@@ -12,4 +10,5 @@ def fetch_space():
     return r.json()
 
 res = fetch_space()
-st.write(res[0]["title"])
+st.title(res[0]["title"])
+st.image(res[0]["hurl"])
