@@ -12,4 +12,4 @@ def fetch_space():
     return r.json()
 
 res = fetch_space()
-st.write(res[0])
+st.write(res[0]["title"])
