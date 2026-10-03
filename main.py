@@ -13,7 +13,7 @@ def fetch_space():
     return r.json(), d
 
 res = fetch_space()[0]
-idx = res.index(str(fetch_space()[1]))
+idx = fetch_space()[1]
 st.write(res[0]["date"])
 st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
