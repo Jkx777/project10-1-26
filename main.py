@@ -10,10 +10,10 @@ def fetch_space():
     """Raise requests.HTTPError if the name/id doesn't exist (404) or on network errors."""
     r = requests.get(f"{base_url + date}")
     r.raise_for_status()
-    return r.json(), d
+    return r.json()
 
-res = fetch_space()[0]
-idx = res.index(str(fetch_space()[1]))
+res = fetch_space()
+idx = res.index(str(d))
 st.write(res[0]["date"])
 st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
