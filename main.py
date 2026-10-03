@@ -12,7 +12,6 @@ def fetch_space():
     return d, r.json()
 
 date, res = fetch_space()
-idx = res.index({"date": date})
 st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
 
