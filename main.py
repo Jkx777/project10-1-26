@@ -13,7 +13,6 @@ def fetch_space():
     return r.json()
 
 res = fetch_space()
-st.write(res[0]["date"])
 st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
 
