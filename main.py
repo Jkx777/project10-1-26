@@ -12,7 +12,7 @@ def fetch_space():
     r.raise_for_status()
     return r.json(), d
 
-st.write(fetch_space(), fetch_space()[0], fetch_space()[1])
+st.write(fetch_space())
 res = fetch_space()[0]
 st.write(res[0]["date"])
 st.title(res[0]["title"])
