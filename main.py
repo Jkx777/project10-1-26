@@ -12,9 +12,8 @@ def fetch_space():
     r.raise_for_status()
     return r.json(), d
 
-lst = (fetch_space[0])
-res = lst
-idx = lst.index(str(fetch_space[1]))
+res = (fetch_space[0])
+idx = res.index(fetch_space[1])
 st.write(res[0]["date"])
 st.title(res[0]["title"])
 st.image(res[0]["hdurl"])
