@@ -8,7 +8,7 @@ def fetch_space():
     d = st.date_input("Enter a date: ")
     """Raise requests.HTTPError if the name/id doesn't exist (404) or on network errors."""
     Base_url = base_url + str(d).replace("-", "")[2:]
-    st.write(base_url)
+    st.write(Base_url)
     r = requests.get(f"{base_url}")
     r.raise_for_status()
     return r.json()
