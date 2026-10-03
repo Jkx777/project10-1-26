@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import datetime
 
-base_url = "https://science.nasa.gov/wp-json/wp/v2/apod-basic/
+base_url = "https://science.nasa.gov/wp-json/wp/v2/apod-basic/"
 
 def fetch_space():
     d = st.date_input("Enter a date: ")
