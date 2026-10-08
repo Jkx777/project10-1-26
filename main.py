@@ -12,6 +12,7 @@ def fetch_space():
     return r.json()
 
 d = st.date_input("Enter a date: ")
+st.write(d)
 res = fetch_space(d)
 
 st.title(res[0]["title"])
