@@ -15,5 +15,5 @@ d = st.date_input("Enter a date: ")
 res = fetch_space(d)
 
 st.title(res["title"])
-st.image(res[0]["hdurl"])
-st.html(res[0]["explanation"])
+st.image(res["hdurl"])
+st.html(res["explanation"])
