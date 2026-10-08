@@ -19,14 +19,14 @@ st.image(res["hdurl"])
 st.html(res["explanation"])
 
 #=======================================================================================
-st.write("==================================================")
+st.write("================================================================================================")
 
-base_url2 = "https://ll.thespacedevs.com/2.3.0/launches/"
+# base_url2 = "https://ll.thespacedevs.com/2.3.0/launches/"
 
-def fetch_space2():
-    r = requests.get(f"{base_url2}")
-    r.raise_for_status()
-    return r.json()
+# def fetch_space2():
+#     r = requests.get(f"{base_url2}")
+#     r.raise_for_status()
+#     return r.json()
 
-res2 = fetch_space2()
-st.write(res2)
+# res2 = fetch_space2()
+# st.write(res2)
